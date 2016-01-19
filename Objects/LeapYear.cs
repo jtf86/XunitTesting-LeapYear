@@ -5,8 +5,11 @@ namespace LeapYear
     public bool IsLeapYear(int year)
     {
       //code will go here
-      // return false;
-      return year % 4 == 0;
+      if (year % 100 == 0) {
+        return false;
+      } else {
+        return year % 4 == 0;
+      }
     }
   }
 }

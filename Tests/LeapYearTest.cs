@@ -26,6 +26,13 @@ namespace LeapYear
       LeapYear LeapYear = new LeapYear();
       Assert.Equal(false, LeapYear.IsLeapYear(1900));
     }
+
+    [Fact]
+    public void IsLeapYear_ForMultiplesOfFourHundred_true()
+    {
+      LeapYear LeapYear = new LeapYear();
+      Assert.Equal(true, LeapYear.IsLeapYear(2000));
+    }
     
   }
 }
