@@ -33,6 +33,6 @@ namespace LeapYear
       LeapYear LeapYear = new LeapYear();
       Assert.Equal(true, LeapYear.IsLeapYear(2000));
     }
-    
+
   }
 }
