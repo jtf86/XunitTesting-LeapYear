@@ -9,6 +9,12 @@ namespace LeapYear
     {
       //testing code here
       LeapYear LeapYear = new LeapYear();
-      Assert.Equal(true, LeapYear.IsLeapYear(2012));    }
+      Assert.Equal(true, LeapYear.IsLeapYear(2012));
+    }
+    public void IsLeapYear_ForNumberNotDivisibleByFour_false()
+    {
+      LeapYear LeapYear = new LeapYear();
+      Assert.Equal(false, LeapYear.IsLeapYear(1999));
+    }
   }
 }
