@@ -1,17 +1,19 @@
+using System.Diagnostics;
+
 namespace LeapYear
 {
-  public class LeapYear
-  {
-    public bool IsLeapYear(int year)
+    public class LeapYear
     {
-      //code will go here
-      if (year % 400 == 0) {
-        return true;
-      } else if (year % 100 == 0) {
-        return false;
-      } else {
-        return year % 4 == 0;
-      }
+        public bool IsLeapYear(int year)
+        {
+            //code will go here
+            if (year % 400 == 0) {
+                return true;
+            } else if (year % 100 == 0) {
+                return false;
+            } else {
+                return year % 4 == 0;
+            }
+        }
     }
-  }
 }
