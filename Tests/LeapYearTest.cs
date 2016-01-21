@@ -11,9 +11,6 @@ namespace LeapYear
         {
             //testing code here
             LeapYear LeapYear = new LeapYear();
-
-            var year = 80;
-            var result = LeapYear.IsLeapYear(year);
             Assert.Equal(true, LeapYear.IsLeapYear(2012));
         }
 
