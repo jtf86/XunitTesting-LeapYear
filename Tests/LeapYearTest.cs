@@ -1,16 +1,10 @@
 using Xunit;
-using Xunit.Abstractions;
+using System;
 
 namespace LeapYear
 {
     public class LeapYearTest
     {
-        private readonly ITestOutputHelper output;
-
-        public LeapYearTest(ITestOutputHelper output)
-        {
-            this.output = output;
-        }
 
         [Fact]
         public void IsLeapYear_ForNumberDivisibleByFour_true()
@@ -20,8 +14,6 @@ namespace LeapYear
 
             var year = 80;
             var result = LeapYear.IsLeapYear(year);
-            output.WriteLine("The result of the expression with " + year + " was " + result.ToString());
-
             Assert.Equal(true, LeapYear.IsLeapYear(2012));
         }
 
